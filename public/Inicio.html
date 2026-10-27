@@ -17,8 +17,17 @@
 <body>
     <header>
         <div class="menu">
-            <h1><img src="/img/logofinalizada.webp" width="100"><a href="perfil.html" class="link-animado" >Olá, @Usúario</a></h1>
-            <nav>
+            <h1><img src="/img/logofinalizada.webp" width="100"><a href="perfil.html" class="link-animado">Olá,
+                    @Usúario</a></h1>
+
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="nav-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="nav-principal">
                 <ul>
                     <li><a href="sobrenos.css" class="link-animado">Quem Somos Nós</a></li>
                     <li><a href="ajuda.html" class="link-animado">Contato</a></li>
@@ -29,14 +38,20 @@
     <main></main>
     <footer>
         <div class="rodape">
-          <img src="/img/logo estendida1.webp" width="400">
-            <li>Inicio</li>
-            <li>Sobre Nós</li>
-            <li>E-mail</li>
-            <li>Política de Privacidade</li>
-            <li>Termos de Uso</li>
+            <img src="/img/logo estendida1.webp" width="400">
+            <nav>
+                <ul>
+                    <li><a href="" class="link-animado">Inicio</a></li>
+                    <li><a href="" class="link-animado">Sobre Nós</a></li>
+                    <li><a href="" class="link-animado">Contato</a></li>
+                    <li><a href="" class="link-animado">Política de Privacidade</a></li>
+                    <li><a href="" class="link-animado">Termos de Uso</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
+
+    <script src="scriptmenu.js"></script>
 </body>
 
 </html>
