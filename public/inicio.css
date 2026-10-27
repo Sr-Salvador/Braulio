@@ -1,3 +1,9 @@
+/* COPIE DAQUI */
+
+html {
+  scroll-behavior: smooth;
+}
+
 .raleway {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -121,7 +127,6 @@ header nav a:hover {
 
   h1 a:hover {
     font-size: 18px;
-    /* evita o texto "pular" no toque */
   }
 
   .hamburger {
@@ -149,7 +154,6 @@ header nav a:hover {
     flex-direction: column;
     gap: 0;
     margin: 0;
-    /* anula o margin-right: 50px */
     padding: 0;
     width: 100%;
   }
@@ -166,7 +170,6 @@ header nav a:hover {
     border-top: 1px solid #ecd9c6;
   }
 
-  /* 3 barras viram um X */
   .hamburger.ativo span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -218,4 +221,351 @@ footer nav a {
     margin-left: 0;
     text-align: center;
   }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-overlay.mostrar {
+  display: flex;
+}
+
+.popup-conteudo {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.botao-fechar {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ATÉ AQUI */
+
+
+.Ye3{
+  background-color: #fff;
+  padding: 2%;
+}
+
+
+.Ye3 h2 {
+  font-size: 35px;
+  margin-left: 50px;
+  margin-top: 35px;
+  text-transform: uppercase;
+  color: #c97b4a;
+  font-weight: bold;
+  margin: 2%;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+
+.prova {
+  border-radius: 5%;
+  padding: 1%;
+  text-align: center;
+  background-color: #fbf1e6;
+}
+
+.exercicios {
+  border-radius: 5%;
+  padding: 1%;
+  text-align: center;
+  background-color: #fbf1e6;
+}
+
+.redacao {
+  border-radius: 5%;
+  padding: 1%;
+  text-align: center;
+  background-color: #fbf1e6;
+}
+
+.conteudo h3 {
+  padding: 8%;
+  font-size: 20px;
+}
+
+.conteudo img {
+  border-radius: 5%;
+  border: 1px #d6a47c solid;
+}
+
+.prova:hover {
+  border: 1px #d6a47c solid;
+  zoom: 105%;
+}
+
+.exercicios:hover {
+  border: 1px #d6a47c solid;
+  zoom: 105%;
+}
+
+.redacao:hover {
+  border: 1px #d6a47c solid;
+  zoom: 105%;
+}
+
+.prova a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #c97b4a;
+  font-weight: bold;
+}
+
+.exercicios a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #c97b4a;
+  font-weight: bold;
+}
+
+.redacao a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #c97b4a;
+  font-weight: bold;
+}
+
+.banner{
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background-color: #c97b4a;
+}
+
+.sobrenos{
+  background-color: #fbf1e6;
+  margin: 50px;
+  padding: 5%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.sobrenos p{
+  text-transform: uppercase;
+  color: #c97b4a;
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+.materias{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.Materia2{
+  background-color: #fbf1e6;
+  border-radius: 8px;
+  padding: 2%;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.Materia2 a{
+  text-decoration: none;
+  color: #bb7e4d;
+}
+
+.Materia2:hover{
+  zoom: 110%;
+  border: 1px solid #c97b4a;
+}
+
+.Ye2{
+  padding: 3%;
+}
+
+.Ye2 h2{
+  font-size: 35px;
+  margin-left: 50px;
+  margin-top: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2%;
+  color: #fff;
+}
+
+/* ===== RESPONSIVO ===== */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.banner {
+  display: block;
+}
+
+/* Matérias: em vez de ficar tudo numa linha, quebra em linhas */
+.materias {
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.Materia2 {
+  margin: 0;
+  flex: 0 1 110px;
+}
+
+.Materia2 img {
+  width: 60px;
+  height: auto;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+  .conteudo {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .prova,
+  .exercicios,
+  .redacao {
+    flex: 0 1 300px;
+    padding: 15px;
+  }
+
+  .sobrenos {
+    margin: 30px;
+    padding: 4%;
+    gap: 20px;
+  }
+
+  .sobrenos img {
+    width: 40%;
+  }
+}
+
+/* ===== Celular ===== */
+@media (max-width: 768px) {
+  .sobrenos {
+    flex-direction: column;
+    margin: 20px 15px;
+    padding: 25px 20px;
+    border-radius: 30px;
+  }
+
+  .sobrenos img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .sobrenos p {
+    font-size: 13px;
+  }
+
+  .Ye3 {
+    padding: 15px;
+  }
+
+  .Ye3 h2,
+  .Ye2 h2 {
+    font-size: 24px;
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .prova,
+  .exercicios,
+  .redacao {
+    flex: none;
+    width: 100%;
+    max-width: 340px;
+    padding: 15px;
+  }
+
+  .conteudo img {
+    width: 100%;
+  }
+
+  .conteudo h3 {
+    padding: 12px 0;
+  }
+
+  .Ye2 {
+    padding: 15px;
+  }
+
+  .materias {
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
+  .Materia2 {
+    flex: 0 1 calc(50% - 10px);
+    padding: 12px 8px;
+  }
+
+  /* zoom no hover atrapalha no toque e pode gerar rolagem lateral */
+  .prova:hover,
+  .exercicios:hover,
+  .redacao:hover,
+  .Materia2:hover {
+    zoom: 100%;
+  }
+}
+
+/* ===== Celulares pequenos ===== */
+@media (max-width: 380px) {
+  h1 a {
+    font-size: 15px;
+  }
+
+  h1 img {
+    width: 50px;
+  }
+}
+
+/* Evita rolagem horizontal */
+html, body {
+  overflow-x: hidden;
 }
