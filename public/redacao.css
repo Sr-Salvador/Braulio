@@ -225,23 +225,27 @@ footer nav a {
 
 /* ATÉ AQUI */
 
+body{
+    background-color: #c97b4a;
+}
+
+
 .texto{
-    background-color: #ffffff;
     padding: 5%;
 }
 
 .texto2{
     background-color: antiquewhite;
     padding: 5%;
+    text-transform: uppercase;
     border-radius: 50px;
-    font-weight: bolder ;
     margin-bottom: 2%;
-    font-size: 18px;
-    color: #d6a47c;
+    font-size: 15px;
+    color: #5f482e;
 }
 
 .texto2:hover{
-    border: #5f482e 3px solid;
+    border: #5f482e 1px solid;
 }
 
 .lista{
@@ -255,4 +259,152 @@ footer nav a {
 
 .canal img{
     border-radius: 30px;
+}
+
+.texto h2{
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 3%;
+}
+
+.conteudo h2{
+    text-align: center;
+    color: #5f482e;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 3%;
+}
+
+.conteudo{
+    margin: 3%;
+    padding: 3%;
+    background-color: antiquewhite;
+    border-radius: 50px;
+}
+
+.sites{
+    display: flex;
+    justify-content: space-around;
+    margin: 3%;
+}
+
+.descomplica img{
+    border-radius: 30px;
+}
+
+.gemini{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.gemini img{
+    width: 100px;
+}
+
+/* ===== RESPONSIVO ===== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.texto2 p {
+    overflow-wrap: break-word;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 1024px) {
+    .texto {
+        padding: 4%;
+    }
+
+    .texto2 {
+        padding: 4%;
+        border-radius: 35px;
+    }
+
+    .conteudo {
+        border-radius: 35px;
+    }
+
+    .sites {
+        gap: 20px;
+    }
+}
+
+/* ===== Celular ===== */
+@media (max-width: 768px) {
+    .texto {
+        padding: 20px 15px;
+    }
+
+    .texto h2 {
+        font-size: 20px;
+        margin: 10px 0 15px;
+    }
+
+    .texto2 {
+        padding: 22px 18px;
+        border-radius: 25px;
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .conteudo {
+        margin: 15px;
+        padding: 20px 15px;
+        border-radius: 25px;
+    }
+
+    .conteudo h2 {
+        font-size: 20px;
+        margin: 10px 0 15px;
+    }
+
+    .canal {
+        padding: 0;
+    }
+
+    .canal img {
+        border-radius: 20px;
+    }
+
+    .sites {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0 0;
+    }
+
+    .descomplica,
+    .redigir {
+        width: 100%;
+        max-width: 150px;
+        text-align: center;
+    }
+
+    .descomplica img,
+    .redigir img {
+        width: 100%;
+    }
+
+    /* botão flutuante menor para não cobrir o texto */
+    .gemini {
+        bottom: 12px;
+        right: 12px;
+    }
+
+    .gemini img {
+        width: 60px;
+    }
 }

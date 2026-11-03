@@ -263,7 +263,6 @@ footer nav a {
 
 
 
-
 .Ye3{
   background-color: #fff;
   padding: 2%;
@@ -371,7 +370,7 @@ body{
 .sobrenos{
   background-color: #fbf1e6;
   margin: 50px;
-  padding: 5%;
+  padding: 4%;
   display: flex;
   text-align: center;
   align-items: center;
@@ -379,16 +378,17 @@ body{
 }
 
 .sobrenos p{
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #c97b4a;
-  font-weight: bolder;
   font-size: 15px;
+  text-align: left;
 }
 
 .materias{
   display: flex;
   justify-content: space-between;
-  padding: 5%;
+  padding: 4%;
   background-color: #fff;
   border-radius: 15px;
 }
@@ -415,7 +415,7 @@ body{
 }
 
 .Ye2{
-  padding: 3%;
+  padding: 2%;
 }
 
 .Ye2 h2{
@@ -428,7 +428,6 @@ body{
   color: #fff;
 }
 
-/* ===== RESPONSIVO ===== */
 
 img {
   max-width: 100%;
@@ -439,7 +438,6 @@ img {
   display: block;
 }
 
-/* Matérias: em vez de ficar tudo numa linha, quebra em linhas */
 .materias {
   flex-wrap: wrap;
   gap: 15px;
@@ -535,7 +533,7 @@ img {
   }
 
   .Ye2 {
-    padding: 15px;
+    padding: 10px;
   }
 
   .materias {
@@ -544,11 +542,9 @@ img {
   }
 
   .Materia2 {
-    flex: 0 1 calc(50% - 10px);
     padding: 12px 8px;
   }
 
-  /* zoom no hover atrapalha no toque e pode gerar rolagem lateral */
   .prova:hover,
   .exercicios:hover,
   .redacao:hover,
