@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,35 @@
     <link rel="stylesheet" href="reset.css">
     <title>Login e Cadastro</title>
 </head>
+
 <body>
+        <div class="login">
+            <div class="nome">
+                <h1>BRÁULIO</h1>
+                <p>Educação & Conhecimento</p>
+            </div>
 
-    <div class="login-container">
-        <div class="logo-area">
-            <h1>BRÁULIO</h1>
-            <p>Educação & Conhecimento</p>
+            <form action="/public/Inicio.html">
+                <div class="form-grupo">
+                    <label for="email">E-mail ou Utilizador</label>
+                    <input type="text" id="email" name="email" placeholder="Digite o seu e-mail" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+
+                <div class="form-opcoes">
+                    <label>
+                        <input type="checkbox" name="remember"> Lembrar-me
+                    </label>
+                    <a href="#">Esqueceu a Senha?</a>
+                </div>
+
+                <button type="submit" class="bottao">Entrar</button>
+            </form>
+
         </div>
-
-        <form action=Inicio.html>
-            <div class="form-group">
-                <label for="email">E-mail ou Utilizador</label>
-                <input type="text" id="email" name="email" placeholder="Digite o seu e-mail" required>
-            </div>
-
-            <div class="form-group">
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" placeholder="••••••••" required>
-            </div>
-
-            <div class="form-options">
-                <label>
-                    <input type="checkbox" name="remember"> Lembrar-me
-                </label>
-                <a href="#">Esqueceu a palavra-passe?</a>
-            </div>
-
-            <button type="submit" class="btn-submit">Entrar</button>
-        </form>
-
-    </div>
-
 </body>
 </html>
