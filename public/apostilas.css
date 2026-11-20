@@ -27,6 +27,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 20px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 h1 a {
@@ -36,8 +37,8 @@ h1 a {
     color: #c97b4a;
 }
 
-h1 a:hover {
-    font-size: 27px;
+h1:hover {
+    transform: scale(1.05);
 }
 
 header nav ul {
@@ -52,10 +53,11 @@ header nav ul {
 header nav a {
     text-decoration: none;
     color: #c97b4a;
+    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 header nav a:hover {
-    font-size: 110%;
+    transform: scale(1.05);
     color: #bb7e4d;
 }
 
